@@ -1510,7 +1510,7 @@ ax[1,0].set_ylabel("Factor of mean wages")
 ax[1,0].set_xlabel(ax[0,0].get_xlabel())
 
 
-ax[1,1].set_title("Reservation Wages")
+ax[1,1].set_title("Offer-Acceptance Rates")
 ax[1,1].plot(X, A[:,0]*100, color=colors[0], label="constant $b$", zorder=3)
 ax[1,1].plot(X, A[:,1]*100, color=colors[1], label="endogenous $b$")
 ax[1,1].plot(X, A[:,2]*100, color=colors[2], label="binary-state")
