@@ -1,7 +1,22 @@
 # employment_responses_to_ui
-Code used for the numerical analysis in my master thesis: "Employment Responses to Unemployment Benefits"
+Code for the numerical analysis in Python for my master thesis: "Employment Responses to Unemployment Benefits"
 --------------------------------------------------------------------------------------
-ENGLISH:
+For the solution, calibration/estimation, and simulation of the model I use the following methods:
+<ol>
+	<li>Estimate a lognormal distribution from mean and quantiles of earnings data
+	<li>Obtain trend component of the US unemployment rate using Hodrick-Prescott Filter
+	<li>Calibrate Model to observed moments using root finding and optimization methods
+	<li>Approximate value of unemployment using value function iteration
+	<li>Estimate parameters of the stochastic process using simulated methods of moments (SMM)
+</ol>
+<BR/>
+The model simulation returns a graph comparing the response of several model variables to different unemployment insurance policies.
+<BR/>
+<img src="images/figure_simulation.png" width="600">
+
+<BR/>
+
+## Instructions to run the code
 
 To run the calculations, python3 has to be installed on the system. 
 It is available at: https://www.python.org/downloads/
